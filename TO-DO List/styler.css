@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding:0px;
+    box-sizing: border-box;
+
+}
+
+.container{
+    height: 100vh;width:100vw;  
+    background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20200907/pngtree-knowledge-tree-graduation-cap-blackboard-education-background-image_398172.jpg");
+    background-color: #8b5a5a; 
+    padding:10px
+}
+
+.box{ 
+    background-image: url("https://th.bing.com/th/id/OIP.JUX0FAGt3nPXbiwiG4mMAgHaJl?w=1275&h=1650&rs=1&pid=ImgDetMain");
+  margin:100px auto 20px;
+  padding:40px 30px 70px; border-radius: 10px;
+    border:5px solid rgb(133, 177, 171);
+     width: 100% ;max-width:540px; 
+  }
+ .box h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+    display: flex; 
+     align-items:center;  font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    
+    }
+    .row{
+
+        margin-bottom:30px;
+     display: flex; border: 3px solid white;
+        align-items: center; border-radius: 30px;
+        justify-content: space-between;
+        padding-left: 15px;
+        margin-bottom: 20px;
+       
+    }
+input{
+    flex:1;
+    border:none; width:100%;
+    outline:none; background: transparent;
+      color: #111010; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding:10px; font-weight: 18px;
+
+}
+button{
+    border:none;
+    border-radius: 40px;
+    outline:none; height:40px;
+    background: transparent; background-color: #b4b24f;
+   color: #fff; opacity:0.85;
+   text-align: center; justify-content: center;
+    padding: 11px 52px; font-size:16px;
+}
+ul li{
+    list-style: none; cursor: pointer;
+    padding: 12px 8px 12px 50px; font-size: 18px;
+position: relative;
+}
+ul li::before{
+content:"";
+position: absolute;
+height: 28px;
+width: 28px;
+border-radius: 50%;
+background: url("./image/unchecked.jpg");
+background-size:  cover;
+background-position: center ;
+top: 12px;
+left:8px;
+}
+ul li.checked{
+    color: #787373;
+    text-decoration: line-through;
+}
+ul li.checked::before{   
+    height: 32px;
+    background-image: url("./image/check.jpg");
+}
+ul li span{
+    position: absolute;
+    right: 0; top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    line-height: 40px;
+    text-align:center;
+    color: #0c0c0c;
+   }
+   ul li span:hover{
+  background: #787373;
+   }
